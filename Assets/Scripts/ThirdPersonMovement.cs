@@ -5,6 +5,10 @@ public class ThirdPersonMovement : MonoBehaviour {
     public Transform cam;
     private float speed = 6f;
     private float turnSmoothVelocity;
+
+    public Transform bulletSpawnPoint;
+    public GameObject bullet;
+
     void Start() {
         controller = GetComponent<CharacterController>();
     }
@@ -19,6 +23,14 @@ public class ThirdPersonMovement : MonoBehaviour {
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
             controller.Move(moveDir * speed * Time.deltaTime);
         }
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            FireProjectile();
+        }
+    }
+
+    void FireProjectile() {
+        Instantiate(bullet, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
     }
 }
 
