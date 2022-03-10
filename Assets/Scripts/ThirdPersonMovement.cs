@@ -6,12 +6,15 @@ public class ThirdPersonMovement : MonoBehaviour {
     private Transform CameraTransform;
     private float speed = 6f;
     private float turnSmoothVelocity;
+<<<<<<< HEAD
 
     public Transform bulletSpawnPoint;
     public GameObject bullet;
 
     public PhotonView photonView;
 
+=======
+>>>>>>> parent of dc6a4ca (Bullet firing done.)
     void Start() {
         controller = GetComponent<CharacterController>();
         Camera PlayerCamera = GetComponentInChildren<Camera>();
@@ -31,14 +34,6 @@ public class ThirdPersonMovement : MonoBehaviour {
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
             controller.Move(moveDir * speed * Time.deltaTime);
         }
-
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            FireProjectile();
-        }
-    }
-
-    void FireProjectile() {
-        Instantiate(bullet, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
     }
 }
 

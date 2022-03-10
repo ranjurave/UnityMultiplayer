@@ -30,8 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.3635, z: 0.824}
   m_LocalScale: {x: 0.4, y: 0.1, z: 0.8}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5349105550702670588}
+  m_Children: []
   m_Father: {fileID: 743681985294840157}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -165,6 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60822c04004f8974d8b0a7bdb2d993e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:Assets/Resources/ShooterPlayer.prefab
   bulletSpawnPoint: {fileID: 5349105550702670588}
   bullet: {fileID: 8711366629331144298, guid: b3f80b5b63941194c98f984969b9f195, type: 3}
   photonView: {fileID: 5518817998683384262}
@@ -207,6 +207,9 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+=======
+  cam: {fileID: 0}
+>>>>>>> parent of dc6a4ca (Bullet firing done.):Assets/Prefabs/Player.prefab
 --- !u!1 &743681985294840156
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +308,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Resources/ShooterPlayer.prefab
 --- !u!1 &2536452637999762852
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,3 +410,5 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5313161609788116901, guid: 92996bd0ac671934994e64236d5e20cc, type: 3}
   m_PrefabInstance: {fileID: 8218400299274712882}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of dc6a4ca (Bullet firing done.):Assets/Prefabs/Player.prefab
